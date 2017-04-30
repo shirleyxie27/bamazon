@@ -8,7 +8,6 @@
 // This means updating the SQL database to reflect the remaining quantity.
 // Once the update goes through, show the customer the total cost of their purchase.
 
-
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
@@ -44,7 +43,7 @@ function start() {
   };
   showProducts();
 
-  // prompting client to select an item and quantity to purchase
+// prompting client to select an item and quantity to purchase
   purchase();
 
   function purchase() {
